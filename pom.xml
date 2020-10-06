@@ -28,6 +28,15 @@
     </properties>
     <profiles>
         <profile>
+            <id>FinalProject</id>
+            <activation>
+            </activation>
+            <properties>
+                <base.api.url>http://vps2.crowdaronline.com:8083</base.api.url>
+                <apiExample.runner>testng.xml</apiExample.runner>
+            </properties>
+        </profile>
+        <profile>
             <id>Secuencial</id>
             <activation>
             </activation>

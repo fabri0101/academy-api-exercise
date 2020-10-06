@@ -1,7 +1,6 @@
 package api.config;
 
-import services.ResponseHeadersService;
-import services.UserService;
+import services.*;
 
 public enum EntityConfiguration {
 
@@ -17,7 +16,16 @@ public enum EntityConfiguration {
         public Class<?> getEntityService() {
             return ResponseHeadersService.class;
         }
+    },
+    AVERAGE_DURATION {
+        @Override
+        public Class<?> getEntityService() {
+            return AverageDurationService.class;
+        }
+    },
+    TOKEN{
+        @Override
+        public Class<?> getEntityService() { return DoTokenService.class; }
     };
-
     public abstract Class<?> getEntityService();
 }

@@ -1,0 +1,7 @@
+{
+  "Authorization":{
+      "jwt": "eyJhbGciOiJIUzUxMiJ9.eyJpc3MiOiJMaXBwaWEtUmVwb3J0LVNlcnZlciIsInN1YiI6ImFkbWluIiwiaWF0IjoxNjAxNDk3ODU4LCJleHAiOjE2MDE1ODQyNTh9.i4-rczQ6_1iz977RAdCYI-dx03dLV9C041zwN9hy9qCdvIp5EBby9uGpvpBzBcX7xhYOUshGKtS5lWAcPNd5ew"
+  },
+  "endpoint": "rest/categories/search/getCategoryTestLengthAverageOverNReports"
+
+}

@@ -1,0 +1,10 @@
+{
+  "headers": {
+    "content Type": "application/json"
+  },
+  "endpoint": "/user/authenticate",
+  "ulrParameters":{
+    "username": "admin",
+    "paswd": "password"
+  }
+}

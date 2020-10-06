@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="1731" started-at="2020-10-06T18:35:02Z" finished-at="2020-10-06T18:35:04Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ApiExampleProjectTestRunner@20398b7c]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Login and Update Profile Test" duration-ms="1731" started-at="2020-10-06T18:35:02Z" finished-at="2020-10-06T18:35:04Z">
+      <class name="ApiExampleProjectTestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:ApiExampleProjectTestRunner@20398b7c]" name="setUpClass" is-config="true" duration-ms="409" started-at="2020-10-06T18:35:02Z" finished-at="2020-10-06T18:35:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ApiExampleProjectTestRunner@20398b7c]" name="runScenario" duration-ms="958" started-at="2020-10-06T18:35:02Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-06T18:35:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Me logeo y obtengo token"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Api Swagger UI - FinalProyect"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No enum constant api.config.EntityConfiguration.LOGEAR]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant api.config.EntityConfiguration.LOGEAR
+at java.lang.Enum.valueOf(Enum.java:238)
+at api.config.EntityConfiguration.valueOf(EntityConfiguration.java:5)
+at ar.steps.SwaggerSteps.realizoUnaPeticion(SwaggerSteps.java:24)
+at ✽.realizo una peticion operacion POST al LOGEAR usando request/post(file:src/test/resources/features/ApiFinalProyect.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:ApiExampleProjectTestRunner@20398b7c]" name="runScenario" duration-ms="78" started-at="2020-10-06T18:35:03Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-10-06T18:35:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["obtener la duración promedio de la prueba de categoría sobre los informes"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Api Swagger UI - FinalProyect"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NoSuchMethodException">
+            <message>
+              <![CDATA[services.AverageDurationService.get(java.lang.String, java.util.Map)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodException: services.AverageDurationService.get(java.lang.String, java.util.Map)
+at java.lang.Class.getMethod(Class.java:1786)
+at ar.steps.SwaggerSteps.doRequest(SwaggerSteps.java:49)
+at ✽.realiza una peticion operacion GET del entity AVERAGE_DURATION utilizando este request doToken y reportsLength:1(file:src/test/resources/features/ApiFinalProyect.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:ApiExampleProjectTestRunner@20398b7c]" name="tearDownClass" is-config="true" duration-ms="48" started-at="2020-10-06T18:35:04Z" finished-at="2020-10-06T18:35:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ApiExampleProjectTestRunner -->
+    </test> <!-- Login and Update Profile Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>

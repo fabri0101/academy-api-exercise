@@ -24,7 +24,9 @@ public class UserSteps extends PageSteps {
         Map<String, String> parameters = getParameters(jsonReplacementValues);
         String jsonPath = "request/".concat(jsonName);
         if (parameters == null) {
-            entityService.getMethod(methodName.toLowerCase(), String.class).invoke("", jsonPath);
+            entityService   //obtengo a la clase
+                    .getMethod(methodName.toLowerCase(), String.class)  // obtengo al metodo
+                    .invoke("", jsonPath);  // invoco el metodo
         } else {
             entityService.getMethod(methodName.toLowerCase(), String.class, Map.class).invoke("", jsonPath, parameters);
         }

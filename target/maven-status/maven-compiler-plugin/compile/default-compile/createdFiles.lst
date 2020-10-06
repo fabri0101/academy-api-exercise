@@ -1,0 +1,5 @@
+api\model\Logear.class
+api\config\EntityConfiguration$4.class
+services\DoTokenService.class
+api\model\AverageDuration.class
+services\ExamenService.class

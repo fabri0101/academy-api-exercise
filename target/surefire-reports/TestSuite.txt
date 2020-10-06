@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.379 s <<< FAILURE! - in TestSuite
+ApiExampleProjectTestRunner.runScenario  Time elapsed: 0.969 s  <<< FAILURE!
+java.lang.IllegalArgumentException: No enum constant api.config.EntityConfiguration.LOGEAR
+
+ApiExampleProjectTestRunner.runScenario  Time elapsed: 0.086 s  <<< FAILURE!
+java.lang.NoSuchMethodException: services.AverageDurationService.get(java.lang.String, java.util.Map)
+

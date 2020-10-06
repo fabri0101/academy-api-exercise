@@ -1,0 +1,7 @@
+{
+  "endpoint": "rest/categories/search/getCategoryTestLengthAverageOverNReports",
+  "headers":{
+      "content Type": "application/json",
+      "Authorization": "Bearer {{Token}}"
+  }
+}
